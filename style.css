@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img#slider {
+    width: 50%; /* Dostosuj szerokość obrazu do własnych potrzeb */
+    max-width: 100%;
+    margin: 20px auto; /* Wyśrodkowanie obrazu */
+    display: block;
+}

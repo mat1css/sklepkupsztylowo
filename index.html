@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sklep.kupsztylowo.pl</title>
+<script>
+  var images = ["img/1.png", "img/2.png", "img/3.png"];
+  var currentIndex = 0; 
+  var interval = 3000; 
+  function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.getElementById("slider").src = images[currentIndex];
+  }
+
+  setInterval(changeImage, interval);
+</script>
+</head>
+
+<body>
+Strona dostępna już wkrótce!</br>
+<img id="slider" src="img/1.png"></br>
+</body>
+</html>
