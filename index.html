@@ -1,25 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>sklep.kupsztylowo.pl</title>
-<script>
-  var images = ["img/1.png", "img/2.png", "img/3.png"];
-  var currentIndex = 0; 
-  var interval = 3000; 
-  function changeImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    document.getElementById("slider").src = images[currentIndex];
-  }
-
-  setInterval(changeImage, interval);
-</script>
+  <link rel="shortcut icon" type="image/x-icon" href="logo.jpg" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kupsztylowo.pl</title>
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-Strona dostępna 03.04.2024 o 13:30 CEST!</br>
-<img id="slider" src="img/1.png"></br>
+  <header>
+    <h1>Kupsztylowo.pl</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Strona główna</a></li>
+        <li><a href="plan.html">Planowane produkty</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="size.html">Rozmiarówka</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <h2>Torba</h2>
+      <stripe-buy-button
+        buy-button-id="buy_btn_1P1QGlGGwQMqnxFNEYvtpxPj"
+        publishable-key="pk_live_51Ow2cDGGwQMqnxFNW3WKovgag0Iludqg3L0I15ssHLvGwPUiNUJlepNSzDZKKjbioLXjfZeW9LhT8DfdI9ZhzUS100RHQrlOU7">
+      </stripe-buy-button>
+    </div>
+
+    <div class="product">
+      <h2>Bluza z kapturem</h2>
+      <stripe-buy-button
+        buy-button-id="buy_btn_1P1QNQGGwQMqnxFNi457gjbd"
+        publishable-key="pk_live_51Ow2cDGGwQMqnxFNW3WKovgag0Iludqg3L0I15ssHLvGwPUiNUJlepNSzDZKKjbioLXjfZeW9LhT8DfdI9ZhzUS100RHQrlOU7">
+      </stripe-buy-button>
+    </div>
+
+    <div class="product">
+      <h2>Koszulka długi rękaw</h2>
+      <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1P1QUVGGwQMqnxFN0UZUVfSn"
+  publishable-key="pk_live_51Ow2cDGGwQMqnxFNW3WKovgag0Iludqg3L0I15ssHLvGwPUiNUJlepNSzDZKKjbioLXjfZeW9LhT8DfdI9ZhzUS100RHQrlOU7"
+>
+</stripe-buy-button>
+    </div>
+
+    <div class="product">
+      <h2>Koszulka krótki rękaw</h2>
+      <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1P1QXgGGwQMqnxFNhY2nmIbT"
+  publishable-key="pk_live_51Ow2cDGGwQMqnxFNW3WKovgag0Iludqg3L0I15ssHLvGwPUiNUJlepNSzDZKKjbioLXjfZeW9LhT8DfdI9ZhzUS100RHQrlOU7"
+>
+</stripe-buy-button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Kupsztylowo.pl</p>
+  </footer>
 </body>
 </html>
